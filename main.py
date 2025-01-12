@@ -8,6 +8,9 @@ def sort(tab : list) -> list[int]:
             maxv = i
         elif i < minv:
             minv = i
+        istep = 10 ** -(len(str(i).split('.')[1]))
+        if istep < step:
+            step = istep
         if dico.get(i):
             dico[i] += 1
         else:
