@@ -1,56 +1,48 @@
-# Programme de Tri Adaptatif
+# Adaptive Sorting Program
 
 ## Description
-Ce programme implémente une variante du tri par dénombrement (counting sort) spécialement adaptée pour gérer à la fois des nombres entiers et décimaux.
+This program implements a variant of counting sort specifically adapted to handle both integer and decimal numbers.
 
-## Fonctionnement
+## Operation
 
-### Paramètres
-- **Entrée** : Liste de nombres (entiers ou décimaux)
-- **Sortie** : Liste triée de nombres
+### Parameters
+- **Input**: List of numbers (integers or decimals)
+- **Output**: Sorted list of numbers
 
-### Processus de tri
-1. **Phase d'analyse**
-   - Détermination des valeurs minimales et maximales
-   - Calcul automatique du pas optimal pour les nombres décimaux
-   - Comptage des occurrences de chaque nombre
+### Sorting Process
+1. **Analysis Phase**
+   - Determination of minimum and maximum values
+   - Automatic calculation of optimal step for decimal numbers
+   - Counting occurrences of each number
 
-2. **Phase de reconstruction**
-   - Création d'un nouveau tableau trié
-   - Insertion des nombres en respectant leur fréquence d'apparition
+2. **Reconstruction Phase**
+   - Creation of a new sorted array
+   - Insertion of numbers respecting their frequency of occurrence
 
-### Caractéristiques
-- Gestion intelligente des nombres décimaux
-- Préservation des doublons
-- Optimisation de la mémoire via un dictionnaire de comptage
+### Characteristics
+- Intelligent handling of decimal numbers
+- Preservation of duplicates
+- Memory optimization through a counting dictionary
 
-## Complexité
-- **Temporelle** : O(n + r) 
-  - n : taille du tableau
-  - r : plage des valeurs ((max - min)/pas)
-- **Spatiale** : O(k)
-  - k : nombre de valeurs uniques
+## Complexity
+- **Time**: O(n + r)
+  - n: array size
+  - r: range of values ((max - min)/step)
+- **Space**: O(k)
+  - k: number of unique values
 
-## Utilisation
-
+## Usage
 ```python
 from main import sort
-Exemple d'utilisation
-nombres = [3.14, 1.59, 2.65, 3.14, 1.0]
-resultat = sort(nombres)
-print(resultat) # Affiche la liste triée
+
+# Usage example
+numbers = [3.14, 1.59, 2.65, 3.14, 1.0]
+result = sort(numbers)
+print(result)  # Displays the sorted list
 ```
 
-### Exemple d'utilisation
-```python
-nombres = [3.14, 1.59, 2.65, 3.14, 1.0]
-resultat = sort(nombres)
-print(resultat) # Affiche la liste triée
-```
-
-## Points forts
-- Efficace pour des distributions de nombres limitées
-- Adapté aux nombres décimaux et entiers
-- Maintien de la stabilité du tri
-- Gestion intelligente des valeurs manquantes
-- Optimisation de la mémoire via un dictionnaire de comptage
+## Key Features
+- Efficient for limited number distributions
+- Adapted for both decimal and integer numbers
+- Maintains sorting stability
+- Memory optimization through counting dictionary
