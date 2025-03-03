@@ -1,12 +1,12 @@
 # Adaptive Sorting Program
 
 ## Description
-This program implements a variant of counting sort specifically adapted to handle both integer and decimal numbers.
+This program implements a variant of counting sort specifically adapted to handle integer  numbers.
 
 ## Operation
 
 ### Parameters
-- **Input**: List of numbers (integers or decimals)
+- **Input**: List of numbers (integers)
 - **Output**: Sorted list of numbers
 
 ### Sorting Process
