@@ -36,7 +36,7 @@ This program implements a variant of counting sort specifically adapted to handl
 from main import sort
 
 # Usage example
-numbers = [3.14, 1.59, 2.65, 3.14, 1.0]
+numbers = [314, 159, 265, 314, 10]
 result = sort(numbers)
 print(result)  # Displays the sorted list
 ```
