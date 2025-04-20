@@ -43,6 +43,6 @@ print(result)  # Displays the sorted list
 
 ## Key Features
 - Efficient for limited number distributions
-- Adapted for both decimal and integer numbers
+- Adapted for integer numbers
 - Maintains sorting stability
 - Memory optimization through counting dictionary
